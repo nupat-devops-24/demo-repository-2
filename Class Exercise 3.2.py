@@ -1,3 +1,7 @@
+# This script calculates and prints the grade based on a given CGPA score.
+# It contains two functions:
+# 1. computegrade(score): Takes a CGPA score as input and returns the corresponding grade.
+#    - If the score is less than 0.0 or greater than 5.0, it returns an error message.
 def computegrade(score):
     if score < 0.0 or score > 5.0:
         return "Error: CGPA score must be between 0.0 and 5.0"
