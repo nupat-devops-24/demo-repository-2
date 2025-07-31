@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  payment_calculator:
+    #Build the image from the Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+    #Expose port 1000 to the host
+    ports:
+      - "1000:1000"
+
+      
