@@ -1,3 +1,5 @@
+import random
+
 # Define a function to calculate and print the grade based on the CGPA score
 def calculate_grade(score):
     if score < 0.0 or score > 5.0:
@@ -23,3 +25,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def random_number():
+    return random.randint(1, 10)
