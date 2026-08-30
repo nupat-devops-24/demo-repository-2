@@ -15,16 +15,19 @@ def calculate_grade(score):
     else:
         print("Grade: Pass")
 
+def random_number():
+    return random.randint(1, 10)
+
 def main():
     try:
         score = float(input("Enter your CGPA score: "))
         
         calculate_grade(score)
+        print("Random number:", random_number())
     except ValueError:
         print("Error: Please enter a numeric value for CGPA score.")
 
 if __name__ == "__main__":
     main()
 
-def random_number():
-    return random.randint(1, 10)
+
